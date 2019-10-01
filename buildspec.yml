@@ -36,6 +36,7 @@ artifacts:
   files:
     - deployment-app-csharp/basic-web-app/site/**/*
     - deployment-app-csharp/basic-web-app/aws-windows-deployment-manifest.json
+    - appspec.yml
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
   #base-directory: location
