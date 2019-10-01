@@ -1,12 +1,44 @@
 version: 0.2
 
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+  #git-credential-helper: yes
+
 phases:
+  install:
+    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
+    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
+    runtime-versions:
+       dotnet: 2.2
+      # name: version
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
   build:
     commands:
       - dotnet restore basic-web-app/basic-web-app.csproj
       - dotnet build basic-web-app/basic-web-app.csproj
       - dotnet publish basic-web-app/basic-web-app.csproj -o site
+  #post_build:
+    #commands:
+      # - command
+      # - command
 artifacts:
   files:
     - deployment-app-csharp/basic-web-app/site/**/*
     - deployment-app-csharp/basic-web-app/aws-windows-deployment-manifest.json
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
