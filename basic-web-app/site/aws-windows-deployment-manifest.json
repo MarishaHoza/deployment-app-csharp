@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "deployments": {
         "aspNetCoreWeb": [{
-                "name": "cSharpProject",
+                "name": "newCSharp",
                 "parameters": {
                     "appBundle": "./site",
                     "iisPath": "/",
