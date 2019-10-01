@@ -34,8 +34,8 @@ phases:
       # - command
 artifacts:
   files:
-    - deployment-app-csharp/basic-web-app/site/**/*
-    - deployment-app-csharp/basic-web-app/site/aws-windows-deployment-manifest.json
+    - basic-web-app/site/**/*
+    - basic-web-app/site/aws-windows-deployment-manifest.json
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
   #base-directory: location
